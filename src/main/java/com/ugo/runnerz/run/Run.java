@@ -1,5 +1,13 @@
 package com.ugo.runnerz.run;
+import java.time.LocalDateTime;
 
-public class Run {
-    
+public record Run(
+    Integer id,
+    String title,
+    LocalDateTime startedOn,
+    LocalDateTime completedOn,
+    Integer miles,
+    Location location
+) {
+
 }
