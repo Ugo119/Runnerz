@@ -36,7 +36,14 @@ public class RunRepository {
             LocalDateTime.now(),
             LocalDateTime.now().plus(45, ChronoUnit.MINUTES),
             4,
-            Location.INDOOR));    
+            Location.INDOOR));
+        runs.add(new Run(
+                4,
+                "Saturday run",
+                LocalDateTime.now(),
+                LocalDateTime.now().plus(25, ChronoUnit.MINUTES),
+                8,
+                Location.OUTDOOR));
     }
 
     List<Run> findAll() {
