@@ -23,6 +23,7 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/api/runs")
 public class RunController {
+//    private final RunRepositoryTemp runRepositoryTemp;
     private final RunRepository runRepository;
 
     public RunController(RunRepository runRepository) {
@@ -46,7 +47,6 @@ public class RunController {
             throw new RunNotFoundException();
         }
         return run.get();
-
     }
 
     // Post
